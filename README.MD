@@ -41,4 +41,4 @@ Este projeto realiza a coleta automática de cotações atualizadas para **Dóla
     A cada execução, novas linhas serão adicionadas automaticamente com as cotações atualizadas e a data/hora do momento.)
 
 🗂️ Estrutura do Projeto
-    ![Image](https://github.com/user-attachments/assets/7e129c53-fbc5-4de0-bae0-f2767e8b11b9)
+    ![Image](https://github.com/user-attachments/assets/7511c5c2-61b7-4b29-b989-91a527244a50)
