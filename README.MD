@@ -6,39 +6,53 @@ Este projeto realiza a coleta automática de cotações atualizadas para **Dóla
 
 ## 🚀 Funcionalidades
 
-- Consulta automática das cotações via API da [AwesomeAPI](https://docs.awesomeapi.com.br/api-de-moedas).
-- Armazena o histórico de cotações no arquivo `Cotações.xlsx`.
-- Organiza as informações com colunas:
-  - `Moeda`
-  - `Cotação`
-  - `Data da última atualização`
+✅ Consulta das cotações via API  
+✅ Atualização da planilha `Cotações.xlsx`  
+✅ Execução do script Python via botão no Excel  
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🧰 Requisitos
 
-- Python 3.13
-- [Pandas](https://pandas.pydata.org/)
-- [Requests](https://docs.python-requests.org/)
-- [Poetry](https://python-poetry.org/) para gerenciamento de dependências
+- ✅ Python 3.11+
+- ✅ [Poetry](https://python-poetry.org/) instalado
+- ✅ Pacotes:
+  - `requests`
+  - `pandas`
+  - `openpyxl`
+  ⚠️ IMPORTANTE: Como a macro VBA do Excel chama o Python nativo do seu computador (e não o ambiente do Poetry), você precisa garantir que os pacotes estejam instalados no Python que o sistema reconhece.
 
----
+📦 Instalação
+    🔁 Clone o repositório
+        git clone https://github.com/Romulomrs/CotacaoDolar.git
+        cd CotacaoDolar
+    🧰 Instale as dependências com o Poetry (opcional, recomendado para testes manuais) Ideal para rodar o script manualmente em um ambiente isolado.
+        poetry install
+        poetry shell
+    ⚠️ Instale os pacotes no Python do sistema
+            Essencial para que a macro VBA consiga executar o script corretamente, pois ela utiliza o Python nativo do seu sistema operacional (e não o ambiente virtual do Poetry).
+            Abra o terminal (CMD ou PowerShell) e execute:
+                pip install requests pandas openpyxl
+            ❗ Se estiver usando mais de um Python instalado, use where python e where pip para confirmar qual versão o sistema está usando por padrão.
 
-## 📦 Instalação
 
-1️⃣ Clone o repositório:
-    git clone https://github.com/Romulomrs/CotacaoDolar.git
-    cd CotacaoDolar
-2️⃣ Instale as dependências com **Poetry:**
-    poetry install
-3️⃣ Ative o ambiente virtual:
-    poetry shell
+⚙️ Como Usar
 
-⚙️ Como usar
-1️⃣Execute o script principal:
-    python src/atualiza_cotacoes.py
-    (O arquivo Cotações.xlsx será criado/atualizado na pasta ArquivoExcel.
-    A cada execução, novas linhas serão adicionadas automaticamente com as cotações atualizadas e a data/hora do momento.)
+    🔒 Feche o arquivo Cotações.xlsx antes de rodar a macro.
+
+    🔘 Clique no botão "Atualizar a cotação" no arquivo excel nomeado "Macro" para executar a macro.
+
+    🧠 O script Python buscará as cotações e atualizará a planilha.
+📎 Exemplo de Macro VBA
+💡  💡 Lembre-se de substituir o caminho CAMINHO\DO\SEU\PROJETO pelo local correto onde você salvou o projeto!
+        Sub ExecutarScriptPython()
+            Dim comando As String
+            comando = "cmd /c cd ""CAMINHO\DO\SEU\PROJETO\CotacaoDolar"" && poetry run python ArquivoExecucao\Cotacao.py"
+            Shell comando, vbNormalFocus
+        End Sub
+📌 Exemplo real:
+cd "C:\Users\SeuUsuario\Documents\Projetos\CotacaoDolar"
+
 
 🗂️ Estrutura do Projeto
-    ![Image](https://github.com/user-attachments/assets/7511c5c2-61b7-4b29-b989-91a527244a50)
+    ![Image](https://github.com/user-attachments/assets/4e4b9caa-ba99-4fbc-9ce7-da8d56d7b1e3)
