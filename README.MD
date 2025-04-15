@@ -59,9 +59,9 @@ Caso você deseje visualizar os dados de cotação em um relatório do Power BI,
 Conectar a planilha Cotações.xlsx ao Power BI.
 
 Inserir filtros com segmentações de dados (Slicers) para selecionar a moeda desejada.
+🖼️ Gráfico
+    ![Image](https://github.com/user-attachments/assets/f3f1660d-0604-4f54-b46e-a77f8566f5f7)
 
 🗂️ Estrutura do Projeto
     ![Image](https://github.com/user-attachments/assets/11ae27d8-92a8-44f6-b6af-04110051c6d3)
 
-🖼️ Gráfico
-    ![Image](https://github.com/user-attachments/assets/f3f1660d-0604-4f54-b46e-a77f8566f5f7)
