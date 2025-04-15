@@ -1,6 +1,6 @@
-# 📈 Atualizador de Cotações – Dólar, Euro e Bitcoin
+# 📈 Atualizador de Cotações – Dólar, Euro, Bitcoin e Libra
 
-Este projeto realiza a coleta automática de cotações atualizadas para **Dólar (USD)**, **Euro (EUR)** e **Bitcoin (BTC)** em relação ao **Real Brasileiro (BRL)**, e salva essas informações em um arquivo Excel, mantendo um histórico de atualizações.
+Este projeto realiza a coleta automática de cotações atualizadas para **Dólar (USD)**, **Euro (EUR)**,**Bitcoin (BTC)** e **Libra (GBP)** em relação ao **Real Brasileiro (BRL)**, e salva essas informações em um arquivo Excel, mantendo um histórico de atualizações.
 
 ---
 
@@ -53,6 +53,12 @@ Este projeto realiza a coleta automática de cotações atualizadas para **Dóla
 📌 Exemplo real:
 cd "C:\Users\SeuUsuario\Documents\Projetos\CotacaoDolar"
 
+📊 Visualização das Cotações no Power BI
+Caso você deseje visualizar os dados de cotação em um relatório do Power BI, é possível:
+
+Conectar a planilha Cotações.xlsx ao Power BI.
+
+Inserir filtros com segmentações de dados (Slicers) para selecionar a moeda desejada.
 
 🗂️ Estrutura do Projeto
-    ![Image](https://github.com/user-attachments/assets/4e4b9caa-ba99-4fbc-9ce7-da8d56d7b1e3)
+    ![Image](https://github.com/user-attachments/assets/11ae27d8-92a8-44f6-b6af-04110051c6d3)
