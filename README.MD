@@ -60,8 +60,8 @@ Conectar a planilha Cotações.xlsx ao Power BI.
 
 Inserir filtros com segmentações de dados (Slicers) para selecionar a moeda desejada.
 🖼️ Gráfico
-    ![Image](https://github.com/user-attachments/assets/f3f1660d-0604-4f54-b46e-a77f8566f5f7)
+    ![Image](https://github.com/user-attachments/assets/21ef3c36-e34b-4c3c-b072-7ad3f69da42c)
+    ![Image](https://github.com/user-attachments/assets/1f790517-3dde-44e8-9713-95a3b1c99212)
 
-🗂️ Estrutura do Projeto
-    ![Image](https://github.com/user-attachments/assets/11ae27d8-92a8-44f6-b6af-04110051c6d3)
+
 
