@@ -28,7 +28,7 @@ except requests.exceptions.RequestException as e:
 try:
     cotacao_dolar = float(requisicao_dic['USDBRL']['bid'])
     cotacao_euro = float(requisicao_dic['EURBRL']['bid'])
-    cotacao_btc = float(requisicao_dic['BTCBRL']['bid']) * 1000  # Convertendo BTC para mil
+    cotacao_btc = float(requisicao_dic['BTCBRL']['bid']) 
     cotacao_libra= float(requisicao_dic['GBPBRL']['bid']) 
     log_message(f"Cotações obtidas: Dólar: {cotacao_dolar}, Euro: {cotacao_euro}, Bitcoin: {cotacao_btc}, libra: {cotacao_libra}")
 except KeyError as e:
